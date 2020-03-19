@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>王淳灏的个人简历</title>
+    <link rel="stylesheet" href="CSS/common.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/circleChart.es5.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <style>
+    .pause {background-position: 0 bottom;}
+</style>
+</head>
+<body>
+    <audio src="audio/Where are you.mp3"  loop id="bgMusic"></audio>
+    
+    <!--
+        每个全屏页面div的class为page，其中的图片的class为pageImg
+        ul为右侧的导航栏
+        pageUlLi和page的数目必须相等，修改数目时还应修改最下面js鼠标悬停的跳转代码
+        -->
+        
+        <div class="grid__item theme-1 qaq" style="height: 100%;">
+            <button class="action"><svg class="icon icon--rewind"><use xlink:href="#icon-rewind"></use></svg></button>
+            <button class="particles-button qwq">我是谁？</button>
+        </div>
+        
+    <div id="wrap"">
+        <ul id="pageUl" type="circle">
+            <li id="pageUlLi1" class="pageUlLi" style="cursor:pointer;color: #e2c03a;">个人简历</li>
+            <li id="pageUlLi2" class="pageUlLi" style="cursor:pointer">项目案例</li>
+            <li id="pageUlLi3" class="pageUlLi" style="cursor:pointer">技术评估</li>
+            <li id="pageUlLi4" class="pageUlLi" style="cursor:pointer">求职意向</li>
+            <li id="pageUlLi5" class="pageUlLi" style="cursor:pointer">联系方式</li>
+        </ul>
+        <div id="main">
+            
+            <div id="page1" class="page">
+                <div class="top">
+                    <div class="ph fl"><img src="img/ph.jpg" alt=""></div>
+                    <div class="text fl">
+                        <p>我叫<span>王淳灏</span></p>
+                        <p>我是一名<span>前端工程师</span></p>
+                        <p>我的座右铭是<span>世上无难事</span></p>
+                    </div>
+                    <div class="bj"></div>
+                </div>
+            </div>
+            <div id="page2" class="page">
+                <div class="container" style="overflow: hidden;">
+                    <div class="row mt-5">
+                        <a href="http://www.kuaitao8.cn/" style="color: #000;" target="_blank">
+                            <div class="card mr-auto ml-auto" style="width: 18rem;">
+                                <img src="img/etbc.png" class="card-img-top" alt="鲸桥儿童编程">
+                                <div class="card-body">
+                                  <h5 class="card-title">鲸桥儿童编程</h5>
+                                  <p class="card-text">鲸桥少儿编程创立于2018年，致力于面向3-15岁青少年提供专业的编程教育、人工智能教育...</p>
+                                  <a href="http://www.kuaitao8.cn/" class="btn btn-primary" target="_blank">点击查看</a>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://swyzyz.github.io/xltp/" style="color: #000;" target="_blank">
+                            <div class="card mr-auto ml-auto" style="width: 18rem;">
+                                <img src="img/dbg.png" class="card-img-top" alt="新浪图库">
+                                <div class="card-body">
+                                  <h5 class="card-title">大办公</h5>
+                                  <p class="card-text">大办公是一家专注于企业办公采购的专业电子商务网站。它以网上订购、传真...</p>
+                                  <a href="https://swyzyz.github.io/dabangong/" class="btn btn-primary" target="_blank">点击查看</a>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://swyzyz.github.io/fhty/" style="color: #000;" target="_blank">
+                            <div class="card mr-auto ml-auto" style="width: 18rem;">
+                                <img src="img/fhty.png" class="card-img-top" alt="凤凰体育">
+                                <div class="card-body">
+                                  <h5 class="card-title">凤凰体育</h5>
+                                  <p class="card-text">凤凰体育是中国知名的体育媒体,是受体育迷欢迎的网络资讯及互动平台。频道集赛事新闻报...</p>
+                                  <a href="https://swyzyz.github.io/fhty/" class="btn btn-primary" target="_blank">点击查看</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row mt-5">
+                        <a href="https://swyzyz.github.io/qczy/" style="color: #000;" target="_blank">
+                            <div class="card mr-auto ml-auto" style="width: 18rem;">
+                                <img src="img/qczy.png" class="card-img-top" alt="汽车之友">
+                                <div class="card-body">
+                                  <h5 class="card-title">汽车之友</h5>
+                                  <p class="card-text">为真实反映西安各4S店的服务水平,方便消费者选择购车,由参谋长说车、《华商报》、新浪...</p>
+                                  <a href="https://swyzyz.github.io/qczy/" class="btn btn-primary" target="_blank">点击查看</a>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://swyzyz.github.io/yycw/" style="color: #000;" target="_blank">
+                            <div class="card mr-auto ml-auto" style="width: 18rem;">
+                                <img src="img/yycw.png" class="card-img-top" alt="青岛远洋船务">
+                                <div class="card-body">
+                                  <h5 class="card-title">青岛远洋船务</h5>
+                                  <p class="card-text">该企业主要服务范围是修理船舶,企业所在地位于山东省青岛市市北区,主要经营行业,单位地址...</p>
+                                  <a href="https://swyzyz.github.io/yycw/" class="btn btn-primary" target="_blank">点击查看</a>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://swyzyz.github.io/qdzc/" style="color: #000;" target="_blank">
+                            <div class="card mr-auto ml-auto" style="width: 18rem;">
+                                <img src="img/qdzc.png" class="card-img-top" alt="青岛和记租车">
+                                <div class="card-body">
+                                  <h5 class="card-title">青岛和记租车</h5>
+                                  <p class="card-text">青岛和记租车公司以安全、信誉、服务为宗旨，送车上门，服务到家，其业务主要包括商务、会议...</p>
+                                  <a href="https://swyzyz.github.io/qdzc/" class="btn btn-primary" target="_blank">点击查看</a>
+                                </div>
+                            </div>
+                        </a>
+                        <script>
+                            $('.card').mouseenter(function(){
+                                $(this).addClass('cardqq');
+                                var that = this;
+                                $(this).mouseleave(function(){
+                                    setTimeout(function(){$(that).removeClass('cardqq');},500);
+                                })
+                            })
+                        </script>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="page3" class="page">
+                <div class="container" style="overflow: hidden;">
+                    <ul class="jszw">
+                        <li style="cursor: pointer;">
+                            <div class="circleChart" id="circle1""> 
+                            </div>
+                        </li>
+                        <li style="cursor: pointer;">
+                            <div class="circleChart" id="circle2">
+                            </div>
+                        </li>
+                        <li style="cursor: pointer;">
+                            <div class="circleChart" id="circle3">
+                            </div>
+                        </li>
+                        <li style="cursor: pointer;">
+                            <div class="circleChart" id="circle4">
+                            </div>
+                        </li>
+                        
+                    </ul>
+                    <script>
+                        $(".circleChart").circleChart({
+                        
+                        value: 1,
+                        startAngle: -25,
+                        speed: 0,
+                        animation: "easeInOutCubic",
+                        backgroundColor: "#dddddd",
+                        color: "#2c3e50",
+                        size: 180,
+                        });
+
+                        $("#circle1").click(function(){
+                            $(this).circleChart({
+                            value: 95,
+                            startAngle: -25,
+                            speed: 1000,
+                            animation: "easeInOutCubic",
+                            text: "HTML5",
+                            backgroundColor: "#dddddd",
+                            color: "#2c3e50",
+                        })});
+                        $("#circle2").click(function(){
+                            $(this).circleChart({
+                            value: 93,
+                            startAngle: -25,
+                            speed: 1000,
+                            animation: "easeInOutCubic",
+                            text: "CSS3",
+                            backgroundColor: "#dddddd",
+                            color: "#2c3e50",
+                        })});
+                        $("#circle3").click(function(){
+                            $(this).circleChart({
+                            value: 88,
+                            startAngle: -25,
+                            speed: 1000,
+                            animation: "easeInOutCubic",
+                            text: "JavaScript",
+                            backgroundColor: "#dddddd",
+                            color: "#2c3e50",
+                        })});
+                        $("#circle4").click(function(){
+                            $(this).circleChart({
+                            value: 85,
+                            startAngle: -25,
+                            speed: 1000,
+                            animation: "easeInOutCubic",
+                            text: "Jquery",
+                            backgroundColor: "#dddddd",
+                            color: "#2c3e50",
+                        })});
+
+                   
+                    </script>
+                </div>
+                
+            </div>
+            <div id="page4" class="page">
+
+            </div>
+            <div id="page5" class="page">
+
+            </div>
+        </div>
+    </div>
+    <script src="js/anime.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/demo.js"></script>
+</body>
+</html>

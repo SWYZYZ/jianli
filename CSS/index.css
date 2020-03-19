@@ -1,0 +1,215 @@
+html,body {
+          height: 100%;
+        }
+body,ul,li,a,p,div {
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .qaq{
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 1000;
+            height: 100%;
+        }
+        #wrap {
+            overflow: hidden;
+            width: 100%;
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 998;
+        }
+
+        #main {
+            top: 0;
+            position: relative;
+        }
+
+        .page {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+        }
+
+        #pageUl {
+            position: fixed;
+            z-index: 999;
+            top:0;
+            right: 20px;
+        }
+        #pageUl li{
+            text-align: center;
+            padding-top: 6px;
+            width: 50px;
+            height: 50px;
+            font-size: 18px;
+            line-height: 1;
+            margin-top: 110px;
+            background-color: darkgrey;
+            border-radius: 4px;
+        }
+        #main .page{
+            filter:grayscale(.3);
+        }
+        
+        #main .page:nth-child(1){
+            background: url(../img/d1bj.jpg) no-repeat center center;
+        }
+        #main .page:nth-child(2){
+            background: url(../img/d2bj.jpg) no-repeat center center;
+        }
+        #main .page:nth-child(3){
+            background: url(../img/d5bj.jpg) no-repeat center center;
+        }
+        #main .page:nth-child(4){
+            background: url(../img/d3bj.jpg) no-repeat center center;
+        }
+        #main .page:nth-child(5){
+            background: url(../img/d4bj.jpg) no-repeat center center;
+        }
+
+        .top{
+            height: 300px;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            top: 200px;
+            width: 800px;
+            opacity: .5;
+            padding-left: 20px;
+            border-radius: 20px;
+            transition: .5s;
+        }
+        .top .bj{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 800px;
+            height: 300px;
+            background-image: radial-gradient(rgba(0,0,0,0),rgba(255,255,255,.6));
+            opacity: 0;
+            border-radius: 20px;
+            transition: .5s;
+        }
+        .top:hover{
+            opacity: 1;
+        }
+        .top:hover .bj{
+            opacity: .8;
+        }
+        .top .ph{
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+           margin-top: 20px;
+        }
+        .top .ph img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+        .top .text{
+            
+            color: #fff;
+            margin-left: 6%;
+            margin-top: 30px;
+        }
+        .top .text span{
+            font-size: 36px;
+        }
+        .top .text p{
+            margin-top: 16px;
+        }
+
+        .card{
+            opacity: .5;
+            transition: .5s;
+        }
+        .card img{
+            border: 1px solid #999;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .cardqq{
+            animation: qq .5s alternate;
+            opacity: 1;
+        }
+        @keyframes qq{
+        0% { transform: translateY(0);}
+        50%{ transform: translateY(-40px); }
+        100%{ transform: translateY(0);}
+        }
+        .jszw {
+            display: flex;
+            margin-top: 360px;
+        }
+        .jszw li{
+            flex: 1;
+        }
+        
+        .jszw h5{
+            margin-top: 40px;
+            width: 200px;
+            text-align: center;
+            position: relative;
+            top: 100%;
+            left: 50%;
+            margin-left: -100px;
+            font-size: 28px;
+            color: darkred;
+        }
+
+        .circle {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            border-radius: 50%;
+            background: #333;
+            
+            }
+              
+            .left,.right{
+            width:200px;
+            height:200px;
+            position: absolute;
+            top: 0px;left: 0px;
+            }
+            .pie_left, .pie_right{
+            width:200px;
+            height:200px;
+            position: absolute;
+            border-radius: 50%;
+            top: 0px;left: 0px;
+            background: #999;
+            transition: 10s;
+            }
+              
+            .pie_right,.right {
+            clip:rect(0,auto,auto,100px);
+            }
+            .pie_left , .left{
+            clip:rect(0,100px,auto,0);
+            }
+              
+            /*
+            *当top和left取值为auto时，相当于0
+            *当bottom和right取值为auto时，相当于100%
+            */
+            .mask {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            left: 25px;
+            top: 25px;
+            /*background: #FFF;*/
+            position: absolute;
+            text-align: center;
+            line-height: 150px;
+            font-size: 26px;
+            color: brown;
+            z-index: 999;
+            }
+            
